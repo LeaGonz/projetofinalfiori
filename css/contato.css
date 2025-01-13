@@ -41,7 +41,7 @@ form legend {
 
 /* Imagen do fundo da seção horario */
 .bg-horario {
-  background-image: url(/imagens/fondo_horario2.jpg);
+  background-image: url(./imagens/fondo_horario2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
