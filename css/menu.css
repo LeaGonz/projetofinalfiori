@@ -1,0 +1,59 @@
+#navbar-css {
+  background-color: #A2B582;
+}
+
+#navbarNav {
+  justify-content: center;
+}
+
+.menu-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("/imagens/restaurante.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: -5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu-image {
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+  /* Até 90% da largura */
+  max-height: 80%;
+  /* Até 80% da altura */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  /* Sombra para destaque */
+  border-radius: 8px;
+  /* Bordas arredondadas */
+}
+
+/* Footer */
+@media (max-width: 576px) {
+  #footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-footer {
+    padding-right: 0;
+  }
+}
+
+.bg-custom {
+  background-color: #a2b582;
+}
+
+.icones a {
+  padding-left: 20px;
+  font-size: 1rem;
+  color: #556b2f;
+  text-decoration: none;
+  margin: 0 10px
+}

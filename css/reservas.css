@@ -1,0 +1,89 @@
+body {
+  background-color: #F5F5DC;
+}
+
+.banner {
+  background-color: #F5F5DC;
+}
+
+main {
+  width: 940px;
+  margin: 50px 30px;
+}
+
+.principal-reservas {
+  padding: 30px 60px 60px 60px;
+}
+
+.row,
+.col {
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  padding: 100px;
+  justify-content: center;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.reserva {
+  text-align: center;
+  /* font-weight: bold; */
+  /* margin-top: 165px;
+  margin-bottom: 5%; */
+}
+
+.input-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 100%;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(212, 175, 55);
+  text-decoration: none;
+  cursor: pointer;
+}

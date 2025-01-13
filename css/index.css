@@ -1,0 +1,179 @@
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.active {
+  color: #F5F5DC !important;
+}
+
+/* Estilo para o navbar */
+#navbar-css {
+  background-color: #a2b582;
+}
+
+#navbarNav {
+  justify-content: center;
+}
+
+/* Classe para fundo personalizado */
+.bg-custom {
+  background-color: #a2b582;
+}
+
+/* Container do banner */
+.banner-container {
+  position: relative;
+}
+
+/* Botão de reserva no banner */
+#btn-reserva-banner {
+  position: absolute;
+  left: 25%;
+  /* Center horizontally */
+  top: 50%;
+  /* Center vertically */
+  transform: translate(-50%, -50%);
+  /* Perfect centering */
+  text-align: center;
+  /* width: 180px;
+  background-color: #d4af37;
+  color: black;
+  border: none; */
+  padding: 10px 20px;
+}
+
+/* Keep your existing media query if needed */
+@media (max-width: 768px) {
+  #btn-reserva-banner {
+    left: 50%;
+    width: 160px;
+    padding: 8px 16px;
+  }
+}
+
+.titulo-centralizado {
+  margin-bottom: 40px;
+}
+
+/* Estilo para a seção "Sobre" */
+.sobre {
+  padding: 120px 120px;
+  text-align: center;
+}
+
+#Galeria {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  width: 80%;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.depoimento {
+  font-style: italic;
+  padding: 120px 200px 0;
+  text-align: center;
+  color: #61655a;
+  font-size: 20px;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
+
+.img-depoimento {
+  margin-right: 250px;
+  margin-bottom: 40px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .sobre {
+    padding: 50px 20px 0;
+  }
+
+  .principal {
+    align-items: center;
+    /* Centraliza o texto e a imagem */
+    text-align: center;
+    /* Garante que o texto fique centralizado */
+  }
+
+  .depoimento {
+    padding: 50px 20px 0;
+    /* Reduz o padding em telas menores */
+  }
+
+  .img-depoimento {
+    margin-top: 10px;
+    /* Espaçamento menor entre o texto e a imagem */
+    margin-right: 0;
+    /* Remove margens fixas */
+    margin-bottom: 20px;
+    /* Adiciona margem inferior */
+  }
+}
+
+.container,
+.row {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Efeito botão */
+.enviar {
+  width: 180px;
+  padding: 10px;
+  background: rgb(212, 175, 55);
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  transition: 1s all;
+  cursor: pointer;
+  scale: 1;
+}
+
+.enviar:hover {
+  background: rgb(212, 175, 55, 1);
+  transform: scale(1.0800098);
+  transition: transform 0.5s ease-in-out;
+
+}
+
+/* Footer */
+@media (max-width: 576px) {
+  #footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-footer {
+    padding-right: 0;
+  }
+}
+
+.bg-custom {
+  background-color: #a2b582;
+}
+
+.icones a {
+  padding-left: 20px;
+  font-size: 1rem;
+  color: #556b2f;
+  text-decoration: none;
+  margin: 0 10px
+}

@@ -1,0 +1,119 @@
+body {
+  background-color: #F5F5DC;
+}
+
+.banner {
+  background-color: #F5F5DC;
+}
+
+.row,
+.col {
+  padding: 0;
+  margin: 0;
+}
+
+.principal-contato {
+  padding: 30px 60px 60px 60px;
+}
+
+.input-padrao {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 100%;
+}
+
+form {
+  padding: 80px;
+  justify-content: center;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+/* Imagen do fundo da seção horario */
+.bg-horario {
+  background-image: url(/imagens/fondo_horario2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+/* Efeito de transparência */
+.transparent {
+  background-color: rgba(16, 14, 14, 0.33);
+  backdrop-filter: blur(1px);
+  color: white;
+  border: 1px solid rgba(16, 14, 14, 0.1);
+  padding: 5%;
+}
+
+/* Efeito sombra do texto */
+.text-transform {
+  color: inherit;
+  text-decoration: none;
+  scale: 1;
+  opacity: 1;
+  transition: transform 0.2s ease-in-out;
+}
+
+.text-transform:hover {
+  opacity: 0.800098;
+  transform: translateY(0px) scale(1.01199) translateZ(0px);
+}
+
+/* Linha divisão horario */
+.hrh {
+  width: 50%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+/* Estilos para o modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Conteudo modal */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Botão fechar */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(212, 175, 55);
+  text-decoration: none;
+  cursor: pointer;
+}

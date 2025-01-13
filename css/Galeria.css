@@ -1,0 +1,65 @@
+body {
+  background-color: #F5F5DC;
+}
+header {
+  height: 75px;
+
+}
+main{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* Estilo das bordas entre as fotos */
+.row {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Define bordas entre as imagens dentro da linha */
+.row .col-md-4 {
+  border-color: #F5F5DC;
+  border-style: solid;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Overlay */
+.image-container {
+  position: relative;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* cor do overlay */
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
