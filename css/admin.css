@@ -1,6 +1,6 @@
 .bg-admin {
     /* background-image: url(/imagens/carrossel-3.jpg); */
-    background-image: url(./imagens/restaurante.jpg);
+    background-image: url(../imagens/restaurante.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 80%;
