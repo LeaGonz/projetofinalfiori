@@ -1,14 +1,34 @@
 body {
   background-color: #F5F5DC;
 }
+
 header {
   height: 75px;
 
 }
-main{
+
+main {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+.principal-galeria {
+  flex-grow: 1;
+  padding-top: 4.5%;
+}
+
+@media (max-width: 1042px) {
+  .principal-galeria {
+    padding-top: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .principal-galeria {
+    padding-top: 22%;
+  }
+}
+
 /* Estilo das bordas entre as fotos */
 .row {
   padding-left: 0;

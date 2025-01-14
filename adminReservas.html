@@ -75,7 +75,24 @@
         </div>
         <!-- FIM Modal -->
         <h1 class="text-center bg-admin mt-5">Reservas</h1>
-        <div class="mt-5 border justify-content-left align-items-left" id="reservasContainer"></div>
+        <div class="mt-5 justify-content-left align-items-left">
+            <table class="table" id="reservasContainer">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Telefone</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Horário</th>
+                        <th scope="col">Pessoas</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="reservasBody">
+                    <!-- As reservas serão inseridas aqui -->
+                </tbody>
+            </table>
+        </div>
         <button class="enviar mt-3 align-right" id="limparReservasBtn">Limpar Reservas</button>
     </div>
 

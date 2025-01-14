@@ -16,6 +16,7 @@ document.getElementById("reservation-form").addEventListener('submit', function 
   var numpeople = document.getElementById('numpeople').value;
   var data = document.getElementById('data').value;
   var hora = document.getElementById('hora').value;
+  var contacto = document.getElementById("contacto").value;
   var modal = document.getElementById("custom-modal"); // Seleciona o modal 
   var modalMessage = document.getElementById("modal-message"); // Seleciona o elemento de mensagem do modal 
   var closeBtn = document.getElementsByClassName("close")[0]; // Seleciona o botão de fechar 
@@ -25,7 +26,8 @@ document.getElementById("reservation-form").addEventListener('submit', function 
     nome: nome,
     numpeople: numpeople,
     data: data,
-    hora: hora
+    hora: hora,
+    contacto: contacto
   };
 
   console.log(novaReserva);

@@ -16,3 +16,44 @@
     text-decoration: none;
     color: red;
 }
+
+.principal-contato {
+    flex-grow: 1;
+}
+
+#reservasContainer {
+    background-color: #fff;
+    /* Fundo branco no container */
+    padding: 20px;
+    /* Espaçamento interno */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra para destaque */
+}
+
+#reservasContainer table {
+    width: 100%;
+    /* Faz a tabela ocupar toda a largura do container */
+    margin: 0;
+    /* Remove espaçamentos adicionais */
+}
+
+#reservasContainer td,
+#reservasContainer th {
+    text-align: center;
+    /* Centraliza texto em células */
+    vertical-align: middle;
+    /* Centraliza verticalmente */
+}
+
+.no-reservas {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #616161;
+    background-color: #fff;
+    /* Garante o fundo branco mesmo na mensagem */
+    height: 100px;
+    /* Define uma altura mínima */
+}

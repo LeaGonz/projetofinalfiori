@@ -1,3 +1,9 @@
+html, body {
+  height: 100%; /* Esto hace que el body ocupe toda la altura de la ventana */
+  margin: 0;    /* Elimina los márgenes por defecto */
+  display: flex;  /* Esto establece el uso de Flexbox */
+  flex-direction: column; /* Hace que los elementos se apilen en una columna */
+}
 body {
   font-family: Verdana, sans-serif;
 }

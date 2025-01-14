@@ -13,6 +13,8 @@ main {
 
 .principal-reservas {
   padding: 30px 60px 60px 60px;
+  flex-grow: 1;
+
 }
 
 .row,
