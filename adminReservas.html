@@ -17,7 +17,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
 </head>
 
-<body>
+<body onload="modalAdmin()">
     <header>
         <!-- Script Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -61,6 +61,14 @@
     </header>
 
     <div class="container-fluid principal-contato mt-5 mb-4">
+        <!-- Modal -->
+        <div id="custom-modal" class="modal mt-5">
+            <div class="modal-content justify-content-center align-items-center">
+                <p id="modal-message"></p>
+                <input type="submit" value="Log in" id="login" class="enviar" />
+            </div>
+        </div>
+        <!-- FIM Modal -->
         <h1 class="text-center bg-admin mt-5">Reservas</h1>
         <div class="mt-5 border justify-content-left align-items-left" id="reservasContainer"></div>
         <button class="enviar mt-3 align-right" id="limparReservasBtn">Limpar Reservas</button>

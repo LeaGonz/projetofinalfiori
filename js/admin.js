@@ -1,3 +1,31 @@
+var modal = document.getElementById("custom-modal"); // Seleciona o modal 
+var modalMessage = document.getElementById("modal-message"); // Seleciona o elemento de mensagem do modal 
+var loginBtn = document.getElementById("login"); // Seleciona o botão de fechar 
+
+
+function modalAdmin() {
+    // Configura a mensagem do modal
+    modalMessage.innerHTML = `
+    <img src="./imagens/logo-fs.png" alt="Logo Fiori di Sicilia" style="width: 100px;">
+    <br><br><strong>Utilizador: </strong><input type="text" id="user" name="user" autocomplete="off" required /><br>
+    <strong>Password: </strong><input type="password" id="password" name="password" autocomplete="off" required /><br>
+    `;
+
+    // Mostra o modal
+    modal.style.display = "block";
+    modal.style.backgroundColor = "white";
+    // Validamos user e password
+    loginBtn.onclick = function () {
+        var user = document.getElementById("user").value;
+        var password = document.getElementById("password").value;
+        if (user === "admin" && password === "1234") {
+            modal.style.display = "none";
+        } else {
+            alert("Incorrecto");
+        }
+    }
+}
+
 function mostrarReservas() {
     let reservas = JSON.parse(localStorage.getItem('reservas'));
     const reservasContainer = document.getElementById('reservasContainer');
