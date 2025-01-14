@@ -7,7 +7,7 @@ function modalAdmin() {
     // Configura a mensagem do modal
     modalMessage.innerHTML = `
     <img src="./imagens/logo-fs.png" alt="Logo Fiori di Sicilia" style="width: 100px;">
-    <br><br><strong>Utilizador: </strong><input type="text" id="user" name="user" autocomplete="off" required /><br>
+    <br><br><strong>Utilizador: </strong><input type="text" id="user" name="user" autocomplete="off" required /><br><br>
     <strong>Password: </strong><input type="password" id="password" name="password" autocomplete="off" required /><br>
     `;
 

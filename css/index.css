@@ -177,3 +177,11 @@ body {
   text-decoration: none;
   margin: 0 10px
 }
+
+/* icone cadiado */
+.lock {
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
