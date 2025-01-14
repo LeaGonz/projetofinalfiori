@@ -21,7 +21,7 @@ function modalAdmin() {
         if (user === "admin" && password === "1234") {
             modal.style.display = "none";
         } else {
-            alert("Incorrecto");
+            alert("Utilizador incorreto!");
         }
     }
 }

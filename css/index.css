@@ -3,7 +3,7 @@ body {
 }
 
 .active {
-  color: #F5F5DC !important;
+  color: #f5f5dc !important;
 }
 
 /* Estilo para o navbar */
@@ -13,6 +13,13 @@ body {
 
 #navbarNav {
   justify-content: center;
+}
+
+.lock {
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 /* Classe para fundo personalizado */
@@ -28,18 +35,15 @@ body {
 /* Botão de reserva no banner */
 #btn-reserva-banner {
   position: absolute;
-  left: 25%;
-  /* Center horizontally */
-  top: 50%;
-  /* Center vertically */
-  transform: translate(-50%, -50%);
-  /* Perfect centering */
-  text-align: center;
-  /* width: 180px;
+  left: 25%; /* Center horizontally */
+  top: 50%; /* Center vertically */
+  transform: translate(-50%, -50%); /* Perfect centering */
+  width: 220px;
   background-color: #d4af37;
   color: black;
-  border: none; */
+  border: none;
   padding: 10px 20px;
+  text-align: center;
 }
 
 /* Keep your existing media query if needed */
@@ -57,8 +61,20 @@ body {
 
 /* Estilo para a seção "Sobre" */
 .sobre {
-  padding: 120px 120px;
+  padding: 50px 80px;
   text-align: center;
+  scroll-margin-top: 70px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .sobre {
+    scroll-margin-top: 80px;
+  }
+}
+
+#sobre-anchor {
+  display: block;
 }
 
 #Galeria {
@@ -151,7 +167,6 @@ body {
   background: rgb(212, 175, 55, 1);
   transform: scale(1.0800098);
   transition: transform 0.5s ease-in-out;
-
 }
 
 /* Footer */
@@ -175,13 +190,5 @@ body {
   font-size: 1rem;
   color: #556b2f;
   text-decoration: none;
-  margin: 0 10px
-}
-
-/* icone cadiado */
-.lock {
-  font-size: 1.5rem;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
+  margin: 0 10px;
 }
