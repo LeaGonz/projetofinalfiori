@@ -31,6 +31,7 @@ function modalAdmin() {
         if (user.toUpperCase().trim() === "ADMIN" && password === "1234") {
             // Chamamos função  
             mostrarReservas();
+            mostrarContactos();
             // Fechamos o modal
             modal.style.display = "none";
         } else {
@@ -38,6 +39,10 @@ function modalAdmin() {
         }
     });
 }
+
+
+
+
 // Função para mostrar os CONTACTOS
 function mostrarContactos() {
     // Obtemos o valor armazenado em 'localStorage' com a chave 'reservas'.
@@ -119,7 +124,6 @@ function mostrarReservas() {
         });
     }
 }
-
 // Função para limpar todas as reservas
 function limparReservas() {
     localStorage.removeItem('reservas');
@@ -137,5 +141,5 @@ function apagarReserva(index) {
 }
 
 // Chama a função ao carregar a página
-mostrarReservas();
-mostrarContactos();
+// mostrarReservas();
+// mostrarContactos();
