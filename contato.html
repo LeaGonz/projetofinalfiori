@@ -22,7 +22,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
-    <!-- Barra de navegação -->
+    <!-- Barra de navegação fixa no topo -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar-css">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="./imagens/logo-fs.png" width="130" alt="Logo"
@@ -63,9 +63,9 @@
       </div>
     </nav>
   </header>
-
-  <div class="container-fluid principal-contato mt-5">
-
+  
+  <!-- Container principal da pagina -->
+  <div class="container-fluid principal-contato">
     <!-- Row1 -->
     <div class="row mt-5">
       <!-- Col1 -->
@@ -74,19 +74,19 @@
           <h2 class="text-center mb-5">Formulário de Contacto</h2>
 
           <label for="nomesobrenome">Nome e sobrenome</label>
-          <input type="text" id="nomesobrenome" class="input-padrao" required />
+          <input type="text" id="nomesobrenome" class="form-control input-padrao" placeholder="Nome e sobrenome" required />
 
           <label for="email">Email</label>
-          <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com" />
+          <input type="email" id="email" class="form-control input-padrao" required placeholder="seuemail@dominio.com" />
 
           <label for="mensagem">Mensagem</label>
-          <textarea cols="65" rows="10" id="mensagem" class="input-padrao"></textarea>
+          <textarea cols="65" rows="10" id="mensagem" class="form-control input-padrao" placeholder="Mensagem..."></textarea>
 
           <label><input type="checkbox" class="checkbox" checked />
             Gostaria de receber nossas novidades por email?</label>
 
           <input type="submit" value="Enviar Formulário" class="enviar" />
-          <!-- Modal -->
+          <!-- Modal para confirmação do contacto -->
           <div id="custom-modal" class="modal">
             <div class="modal-content">
               <p id="modal-message"></p>
@@ -114,16 +114,16 @@
             4760-011 Sicilia, Italia
           </div>
         </div>
+        <!-- Botão para pagina de reservas -->
         <a href="reservas.html">
           <button class="enviar mt-3">Reservas</button>
         </a>
         <br>
       </div>
       <!-- FIM Col2 -->
-
     </div>
     <!-- FIM Row1 -->
-    <!-- Row2 -->
+    <!-- Row2 MAPA -->
     <div class="row mt-2">
       <div class="col">
         <iframe
@@ -138,16 +138,18 @@
 
   <!-- Footer -->
   <footer id="footer" class="d-flex flex-wrap justify-content-between align-items-center bg-custom py-3 border-top">
+    <!-- Ícones redes sociais -->
     <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
       <div class="icones"> <a href="https://www.instagram.com" target="_blank"> <i class="fab fa-instagram fa-2x"></i>
         </a> <a href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook fa-2x"></i> </a> <a
-          href="https://wa.me/SEU_NUMERO_DE_TELEFONE" target="_blank"> <i class="fa-brands fa-whatsapp fa-2x"></i> </a>
+          href="https://wa.me/900901902" target="_blank"> <i class="fa-brands fa-whatsapp fa-2x"></i> </a>
       </div>
     </div>
     <div class="col-12 col-md-2 text-center">
       <p class="mb-0 text-body-secondary">© Todos os direitos reservados</p>
     </div>
   </footer>
+  <!-- Script JavaScript -->
   <script src="./js/contato.js"></script>
   <script src="./js/index.js"></script>
 

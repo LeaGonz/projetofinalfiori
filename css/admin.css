@@ -1,11 +1,20 @@
 .bg-admin {
-    /* background-image: url(/imagens/carrossel-3.jpg); */
     background-image: url(../imagens/restaurante.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 80%;
     border-radius: 10px;
     color: white;
+    text-shadow: 
+      1px 1px 0 #556b2fb2,  /* Sombra a la derecha y abajo */
+      -1px -1px 0 #556b2fb2, /* Sombra a la izquierda y arriba */
+      1px -1px 0 #556b2fb2,  /* Sombra a la derecha y arriba */
+      -1px 1px 0 #556b2fb2;  /* Sombra a la izquierda y abajo */
+}
+
+.principal-admin {
+    flex-grow: 1;
+    padding: 70px 30px 40px 30px;
 }
 
 .align-right {

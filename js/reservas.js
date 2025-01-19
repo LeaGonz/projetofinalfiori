@@ -7,11 +7,13 @@ document.getElementById("nome").addEventListener("input", function (e) {
 });
 
 // localStorage.removeItem('reservas'); // Limpa o localStorage
-// BD para as reservas, se não existir reserva, cria um array vazio
+// Obtemos o valor armazenado em 'localStorage' com a chave 'reservas'.
+// Se não houver, será utilizado um array vazio.
 let reservas = JSON.parse(localStorage.getItem('reservas')) || [];
 document.getElementById("reservation-form").addEventListener('submit', function (e) {
   e.preventDefault(); // Evita a execução padrão do formulário
 
+  // Seleciona os valores do formulario
   var nome = document.getElementById('nome').value;
   var numpeople = document.getElementById('numpeople').value;
   var data = document.getElementById('data').value;
@@ -30,11 +32,8 @@ document.getElementById("reservation-form").addEventListener('submit', function 
     contacto: contacto
   };
 
-  console.log(novaReserva);
   // Adicionar a nova reserva ao array
   reservas.push(novaReserva);
-
-  console.log(reservas);
 
   // Salvar o array no localStorage
   localStorage.setItem('reservas', JSON.stringify(reservas));
