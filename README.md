@@ -1,7 +1,8 @@
 # Fiori di Sicilia - Website de Restaurante
 
-## 🌟 Funcionalidades Principais
 ![Página Inicial](./imagens/readme.png)
+
+## 🌟 Funcionalidades Principais
 ### 1. Página Inicial
 - Introdução ao restaurante.
 - Imagens de destaque em carrossel.
